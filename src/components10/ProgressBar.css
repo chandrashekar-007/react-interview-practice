@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    max-width: none;
+    background-color: var(--background-color);
+    
+}
+.progress_container{
+    display: flex;
+    max-width: 50rem;
+    justify-content: center;
+    align-items: center;
+    min-height:60vh;
+    position: relative;
+}
+.progress_bar{
+    max-width: 100rem;
+    min-width: 50rem;
+    height: 5rem;
+    width: 100%;
+    border: 5px solid rgb(145, 145, 162);
+    border-radius:20rem;
+    position: relative;
+    z-index: 5;
+    padding: 0.2rem;
+    overflow: hidden;
+}
+.progress_color_bar{
+    background-color: rgb(238, 131, 15);
+    height: 100%;
+    /* width: 100%; use inline styles */
+    border-radius: 20rem;
+}
+.progress_count{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/* ----------------------------- */
+
+.light-theme{
+    --border-color:#000;
+    --background-color:rgba(237, 111, 57, 0.981);
+}
+.dark-theme{
+    --border-color:#fff;
+    --background-color:rgb(45, 41, 41);
+}
+
+
+.car{
+    width:10rem;
+    height:10rem;
+    border-radius:1rem; 
+    border:0.5rem solid var(--border-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+
+
+
+
